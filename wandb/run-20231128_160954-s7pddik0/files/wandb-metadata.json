@@ -1,0 +1,87 @@
+{
+    "os": "Linux-6.2.0-36-generic-x86_64-with-glibc2.31",
+    "python": "3.9.13",
+    "heartbeatAt": "2023-11-28T16:09:55.383547",
+    "startedAt": "2023-11-28T16:09:54.682759",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--dataset",
+        "siim",
+        "--data-root",
+        "/code/zhou/originalfile/SIIM-ACR-Pneumothorax-Seg-XR/"
+    ],
+    "state": "running",
+    "program": "/code/chen/FCBFormer/train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "host": "a67e58658cbc",
+    "username": "root",
+    "executable": "/opt/conda/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3.7057499999999997,
+        "min": 800.0,
+        "max": 4000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3.699,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.699,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.699,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.699,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.7,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.699,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.7,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.699,
+            "min": 800.0,
+            "max": 4000.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 915.3213348388672,
+            "used": 685.3645401000977
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 2080 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 2080 Ti",
+            "memory_total": 11811160064
+        }
+    ],
+    "memory": {
+        "total": 15.57358169555664
+    }
+}

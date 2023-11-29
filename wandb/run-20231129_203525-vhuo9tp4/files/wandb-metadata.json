@@ -1,0 +1,91 @@
+{
+    "os": "Linux-6.2.0-36-generic-x86_64-with-glibc2.31",
+    "python": "3.9.13",
+    "heartbeatAt": "2023-11-29T20:35:26.411470",
+    "startedAt": "2023-11-29T20:35:25.637619",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--dataset",
+        "siim",
+        "--data-root",
+        "/code/zhou/originalfile/SIIM-ACR-Pneumothorax-Seg-XR/",
+        "-o",
+        "../",
+        "--batch-size",
+        "1"
+    ],
+    "state": "running",
+    "program": "/code/chen/FCBFormer/train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "host": "e7df52a16d2e",
+    "username": "root",
+    "executable": "/opt/conda/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2.7995,
+        "min": 800.0,
+        "max": 3400.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2.8,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.799,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.799,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.8,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.799,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.799,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.799,
+            "min": 800.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.799,
+            "min": 800.0,
+            "max": 3400.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 915.3213348388672,
+            "used": 436.351806640625
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 2080 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 2080 Ti",
+            "memory_total": 11811160064
+        }
+    ],
+    "memory": {
+        "total": 15.57358169555664
+    }
+}

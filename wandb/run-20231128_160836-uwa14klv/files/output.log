@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "/code/chen/FCBFormer/train.py", line 235, in <module>
+    main()
+  File "/code/chen/FCBFormer/train.py", line 231, in main
+    train(args)
+  File "/code/chen/FCBFormer/train.py", line 180, in train
+    loss = train_epoch(
+  File "/code/chen/FCBFormer/train.py", line 29, in train_epoch
+    output = model(data)
+  File "/opt/conda/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    result = forward_call(*args, **kwargs)
+  File "/code/chen/FCBFormer/Models/models.py", line 188, in forward
+    x1 = self.TB(x)
+  File "/opt/conda/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/code/chen/FCBFormer/Models/models.py", line 160, in forward
+    pyramid = self.get_pyramid(x)
+  File "/code/chen/FCBFormer/Models/models.py", line 151, in get_pyramid
+    x = sub_module(x, H, W)
+  File "/opt/conda/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/code/chen/FCBFormer/Models/pvt_v2.py", line 165, in forward
+    x = x + self.drop_path(self.attn(self.norm1(x), H, W))
+  File "/opt/conda/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/code/chen/FCBFormer/Models/pvt_v2.py", line 102, in forward
+    q = self.q(x).reshape(B, N, self.num_heads, C // self.num_heads).permute(0, 2, 1, 3)
+  File "/opt/conda/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/conda/lib/python3.9/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB (GPU 0; 10.75 GiB total capacity; 242.41 MiB already allocated; 3.81 MiB free; 256.00 MiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

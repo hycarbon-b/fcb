@@ -1,0 +1,143 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train Epoch: 1 [2260/2260 (100.0%)]	Average loss: 1.012919	Time: 252.017576
+
+
+
+Test  Epoch: 1 [119/119 (100.0%)]	Average performance: 0.089969	Time: 7.013452
+Traceback (most recent call last):
+  File "/code/chen/FCBFormer/train.py", line 236, in <module>
+    main()
+  File "/code/chen/FCBFormer/train.py", line 232, in main
+    train(args)
+  File "/code/chen/FCBFormer/train.py", line 194, in train
+    torch.save(
+  File "/opt/conda/lib/python3.9/site-packages/torch/serialization.py", line 440, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/opt/conda/lib/python3.9/site-packages/torch/serialization.py", line 315, in _open_zipfile_writer
+    return container(name_or_buffer)
+  File "/opt/conda/lib/python3.9/site-packages/torch/serialization.py", line 288, in __init__
+    super().__init__(torch._C.PyTorchFileWriter(str(name)))
+RuntimeError: Parent directory Trained models does not exist.
+Saving...

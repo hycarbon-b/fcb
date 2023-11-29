@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "/code/chen/FCBFormer/train.py", line 244, in <module>
+    main()
+  File "/code/chen/FCBFormer/train.py", line 240, in main
+    train(args)
+  File "/code/chen/FCBFormer/train.py", line 163, in train
+    ) = build(args)
+  File "/code/chen/FCBFormer/train.py", line 137, in build
+    model.to(device)
+  File "/opt/conda/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1145, in to
+    return self._apply(convert)
+  File "/opt/conda/lib/python3.9/site-packages/torch/nn/modules/module.py", line 797, in _apply
+    module._apply(fn)
+  File "/opt/conda/lib/python3.9/site-packages/torch/nn/modules/module.py", line 797, in _apply
+    module._apply(fn)
+  File "/opt/conda/lib/python3.9/site-packages/torch/nn/modules/module.py", line 797, in _apply
+    module._apply(fn)
+  [Previous line repeated 1 more time]
+  File "/opt/conda/lib/python3.9/site-packages/torch/nn/modules/module.py", line 820, in _apply
+    param_applied = fn(param)
+  File "/opt/conda/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1143, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+RuntimeError: CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
