@@ -1,1 +1,1 @@
-python train.py --dataset siim --data-root /code/zhou/originalfile/SIIM-ACR-Pneumothorax-Seg-XR/ 
+python train.py --dataset siim --data-root /code/zhou/originalfile/SIIM-ACR-Pneumothorax-Seg-XR/ -o ../
