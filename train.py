@@ -209,7 +209,7 @@ def train(args):
                     "test_measure_mean": test_measure_mean,
                     "test_measure_std": test_measure_std,
                 },
-                "../" + args.dataset + ".pt",
+                args.o + args.dataset + ".pt",
             )
             prev_best_test = test_measure_mean
 
@@ -230,6 +230,7 @@ def get_args():
     parser.add_argument(
         "--multi-gpu", type=str, default="false", dest="mgpu", choices=["true", "false"]
     )
+    parser.add_argument("-o", type=str, default="Trained models/FCBFormer_")
 
     return parser.parse_args()
 
